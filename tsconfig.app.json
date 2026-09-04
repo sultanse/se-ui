@@ -22,8 +22,8 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./package/*"]
     }
   },
-  "include": ["src"]
+  "include": ["package"]
 }

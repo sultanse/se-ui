@@ -1,21 +1,22 @@
-# React + TypeScript + Vite + shadcn/ui
+# se-ui
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+React component library built with TypeScript and Tailwind CSS.
 
-## Adding components
-
-To add components to your app, run the following command:
+## Installation
 
 ```bash
-npx shadcn@latest add button
+bun add se-ui
 ```
 
-This will place the ui components in the `src/components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
+## Usage
 
 ```tsx
-import { Button } from "@/components/ui/button"
+import { Button } from "se-ui/button"
+import "se-ui/index.css"
+
+export function App() {
+  return <Button>Save</Button>
+}
 ```
+
+Every UI component is imported through its own package entry, for example `se-ui/dialog` or `se-ui/accordion`.

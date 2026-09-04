@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@/*": ["../package/*"],
+      "@se-ui/index.css": ["../package/index.css"],
+      "@se-ui/theme-provider": ["../package/components/theme-provider.tsx"],
+      "@se-ui/*": ["../package/components/ui/*"]
+    }
+  },
+  "include": ["*.ts", "*.tsx"]
+}
